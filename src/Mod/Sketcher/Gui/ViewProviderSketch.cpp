@@ -3571,19 +3571,17 @@ QIcon ViewProviderSketch::mergeColorfulOverlayIcons(const QIcon& orig) const
     if (!getSketchObject()->FullyConstrained.getValue()) {
         QPixmap px;
 
-        static const char* const sketcher_notfullyconstrained_xpm[] = {"9 9 3 1",
-                                                                       ". c None",
-                                                                       "# c #dbaf00",
-                                                                       "a c #ffcc00",
-                                                                       "##.....##",
-                                                                       "#a#...#a#",
-                                                                       "#aa#.#aa#",
-                                                                       ".#a#.#a#.",
-                                                                       ".#a#.#a#.",
-                                                                       ".#a#.#a#.",
-                                                                       "#aa#.#aa#",
-                                                                       "#a#...#a#",
-                                                                       "##.....##"};
+        static const char* const sketcher_notfullyconstrained_xpm[] = {"8 8 2 1",
+                                                                       "# c #f5f5f5",
+                                                                       "o c #f96243",
+                                                                       "#oo##oo#",
+                                                                       "#oo##oo#",
+                                                                       "#oo##oo#",
+                                                                       "#oo##oo#",
+                                                                       "#oo##oo#",
+                                                                       "#oo##oo#",
+                                                                       "#oo##oo#",
+                                                                       "#oo##oo#"};
         px = QPixmap(sketcher_notfullyconstrained_xpm);
 
         mergedicon = Gui::BitmapFactoryInst::mergePixmap(
