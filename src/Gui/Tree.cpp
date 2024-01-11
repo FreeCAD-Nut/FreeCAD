@@ -4938,19 +4938,18 @@ void DocumentObjectItem::testStatus(bool resetStatus, QIcon& icon1, QIcon& icon2
             if (pxError.isNull()) {
                 // object is in error state
                 const char* const feature_error_xpm[] = {
-                    "9 9 3 1",
-                    ". c None",
-                    "# c #ff0000",
-                    "a c #ffffff",
-                    "...###...",
-                    ".##aaa##.",
-                    ".##aaa##.",
-                    "###aaa###",
-                    "###aaa###",
+                    "9 9 2 1",
+                    "# c #f5f5f5",
+                    "o c #f96243",
+                    "###ooo###",
+                    "###ooo###",
+                    "###ooo###",
+                    "###ooo###",
+                    "###ooo###",
                     "#########",
-                    ".##aaa##.",
-                    ".##aaa##.",
-                    "...###..." };
+                    "#########",
+                    "###ooo###",
+                    "###ooo###" };
                 pxError = QPixmap(feature_error_xpm);
             }
             px = pxError;
@@ -4960,19 +4959,17 @@ void DocumentObjectItem::testStatus(bool resetStatus, QIcon& icon1, QIcon& icon2
             if (pxRecompute.isNull()) {
                 // object must be recomputed
                 const char* const feature_recompute_xpm[] = {
-                    "9 9 3 1",
-                    ". c None",
-                    "# c #0000ff",
-                    "a c #ffffff",
-                    "...###...",
-                    ".######aa",
-                    ".#####aa.",
-                    "#####aa##",
-                    "#aa#aa###",
-                    "#aaaa####",
-                    ".#aa####.",
-                    ".#######.",
-                    "...###..." };
+                    "8 8 2 1",
+                    "# c #f5f5f5",
+                    "l c #378ae7",
+                    "llllllll",
+                    "llllllll",
+                    "ll####ll",
+                    "ll####ll",
+                    "ll####ll",
+                    "ll####ll",
+                    "llllllll",
+                    "llllllll" };
                 pxRecompute = QPixmap(feature_recompute_xpm);
             }
             px = pxRecompute;
@@ -5007,17 +5004,17 @@ void DocumentObjectItem::testStatus(bool resetStatus, QIcon& icon1, QIcon& icon2
             static QPixmap pxHidden;
             if (pxHidden.isNull()) {
                 const char* const feature_hidden_xpm[] = {
-                    "9 7 3 1",
-                    ". c None",
-                    "# c #000000",
-                    "a c #ffffff",
-                    "...###...",
-                    "..#aaa#..",
-                    ".#a###a#.",
-                    "#aa###aa#",
-                    ".#a###a#.",
-                    "..#aaa#..",
-                    "...###..." };
+                    "8 8 2 1",
+                    "l c #378ae7",
+                    "b c #333333",
+                    "bbbbbbbb",
+                    "bbbbbbbb",
+                    "bbllllbb",
+                    "bbllllbb"
+                    "bbllllbb",
+                    "bbllllbb",
+                    "bbbbbbbb",
+                    "bbbbbbbb" };
                 pxHidden = QPixmap(feature_hidden_xpm);
             }
             pxOff = BitmapFactory().merge(pxOff, pxHidden, BitmapFactoryInst::TopLeft);
@@ -5028,17 +5025,17 @@ void DocumentObjectItem::testStatus(bool resetStatus, QIcon& icon1, QIcon& icon2
             static QPixmap pxExternal;
             if (pxExternal.isNull()) {
                 const char* const feature_external_xpm[] = {
-                    "7 7 3 1",
-                    ". c None",
-                    "# c #000000",
-                    "a c #ffffff",
-                    "..###..",
-                    ".#aa##.",
-                    "..#aa##",
-                    "..##aa#",
-                    "..#aa##",
-                    ".#aa##.",
-                    "..###.." };
+                    "8 8 2 1",
+                    "# c #f5f5f5",
+                    "b c #333333",
+                    "bbbbbbbb",
+                    "bbbbbbbb",
+                    "bb####bb",
+                    "bb####bb",
+                    "bb####bb",
+                    "bb####bb",
+                    "bbbbbbbb",
+                    "bbbbbbbb" };
                 pxExternal = QPixmap(feature_external_xpm);
             }
             pxOff = BitmapFactory().merge(pxOff, pxExternal, BitmapFactoryInst::BottomRight);
