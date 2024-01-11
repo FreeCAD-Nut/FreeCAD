@@ -207,19 +207,18 @@ QIcon ViewProvider::mergeColorfulOverlayIcons (const QIcon & orig) const
         QPixmap px;
 
         static const char * const feature_tip_xpm[]={
-            "9 9 3 1",
+            "9 9 2 1",
             ". c None",
-            "# c #00cc00",
-            "a c #ffffff",
-            "...###...",
-            ".##aaa##.",
-            ".##aaa##.",
-            "###aaa###",
-            "##aaaaa##",
-            "##aaaaa##",
-            ".##aaa##.",
-            ".##aaa##.",
-            "...###..."};
+            "b c #252525",
+            ".........",
+            ".........",
+            ".........",
+            ".........",
+            ".........",
+            ".........",
+            ".........",
+            "bbbbbbbbb",
+            "bbbbbbbbb"};
         px = QPixmap(feature_tip_xpm);
 
         mergedicon = Gui::BitmapFactoryInst::mergePixmap(mergedicon, px, Gui::BitmapFactoryInst::BottomRight);
