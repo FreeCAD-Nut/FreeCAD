@@ -64,20 +64,17 @@ QIcon ViewProviderAttachExtension::extensionMergeColorfullOverlayIcons (const QI
                 QPixmap px;
 
                 static const char * const feature_detached_xpm[]={
-                    "9 10 3 1",
-                    ". c None",
-                    "# c #cc00cc",
-                    "a c #ffffff",
-                    "...###...",
-                    ".##aaa##.",
-                    "##aaaaa##",
-                    "##aaaaa##",
-                    "#########",
-                    "#########",
-                    "#########",
-                    ".##aaa##.",
-                    ".##aaa##.",
-                    "...###..."};
+                    "8 8 2 1",
+                    "# c #f5f5f5",
+                    "o c #f96243",
+                    "oooooooo",
+                    "oooooooo",
+                    "oo####oo",
+                    "oo####oo",
+                    "oo####oo",
+                    "oo####oo",
+                    "oooooooo",
+                    "oooooooo"};
 
                     px = QPixmap(feature_detached_xpm);
 
